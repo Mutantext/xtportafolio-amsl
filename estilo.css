@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document 190601 */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+	font-family: 'Kanit', sans-serif;
+	text-decoration: none;
+
+
+}
+
+body{
+	
+	font: arial, helvetica ;
+	background-image: linear-gradient(-45deg,#e3ddd9 50%, #36221c 50%);
+}
+
+.header__superior{
+	
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo img{
+	width: 100px;
+	
+}
+
+.container__menu{
+	width: 100%;
+	height: 70px;
+	padding: 0 20px;
+}
+
+.menu{
+	
+	max-resolution: 1200px;
+	margin: auto;
+	height: 100%;
+}
+
+article{
+	height: 100%;
+	
+}
+article > ul{
+	height: 100%;
+	display: flex;
+	
+	
+}
+
+article > ul > li{
+	height: 100%;
+	list-style: none;
+	position: relative;
+	
+}
+
+article > ul > li >a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 14px;
+	text-transform: uppercase;
+	font-size: 18px;
+	transition: all 300ms ease;
+	color: wheat;
+}
+
+article > ul > li >a:hover{
+	transform: scale(1.1);
+	background: #023877;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		border-radius: 10px;
+
+}
+
+
+/*Submenu*/
+
+article ul li ul{
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+	position: absolute;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	top: 80px;
+	left: -5;
+	padding: 14px 0px;
+	visibility: hidden;
+	opacity: 0; 
+	z-index: 10;
+	transition: all 300ms ease;
+
+}
+article ul li:hover ul{ 
+		visibility: visible;
+		opacity: 1;
+		top: 70px;
+	
+}
+
+article ul li ul li a{
+	display: block;
+	color: #0099E9;
+	padding: 3px;
+	padding-left: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+}
+
+article ul li ul li a:Hover{
+	background: #0074c7;
+	color: #fff;
+	transform: scale(1.1);
+	padding-left: 20px;
+font-size: 14px;
+}
+
+/*Elementos R*/
+
+.icon__menu{
+	font-size: 26px;
+	color: white;
+	cursor: pointer;
+	width: 26px;
+	height: 100%;
+	display: none;
+	align-items: center;
+	
+}
+
+#check__menu{
+	display: none;
+}
+
+label__check{
+	
+	widows: 26px;
+	height: 100%;
+}
+
+@media screen and (max-width: 720px){
+	
+	.header__superior{
+		padding: 10px;
+	}
+	
+	.logo img{
+		width: 100px;
+	}
+	article>ul{
+		flex-direction: column;
+		background-color: #023877;
+		position: fixed;
+		left: 0;
+		top: 190px;
+		width: 100%;
+		height: 300px;
+		transition: all 300ms ease;
+		z-index: 1;
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	
+	article>ul>li>a:hover{
+	transform: scale(1);
+	}
+	
+	article ul li ul{
+	left: 90px;
+	
+}
+
+	article> ul> li:hover ul{
+		top: 50px
+		
+	}
+	
+	article >ul > li:fisrt-child a{
+		
+		
+		
+	}
+	#selected{
+		transform: scale(1);
+		
+	}
+	
+	.lable__check{
+		display: block;
+		
+	}
+
+	.icon__menu{
+		display: flex;
+	}
+	#check__menu:checked ~ article> ul{
+		height: 300px;
+		visibility: visible;
+		opacity: 1;
+		
+	}
+	
+	/**/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#DatosC{
+	display: flex;
+	justify-content: space-between;
+}
+
+#tablaMain{
+	width: 50%;
+}
+
+
+.FotoB{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Remarcar{
+	 	color: orangered;
+		margin-left: auto;
+  		margin-right: auto;
+		text-align: center;
+}
+
+#DatosI{
+	width: 55%;
+}
+#p{
+	width: 55%;
+}
+
+#BannerT{
+  background: lightgray;
+	width: 30px;
+	height: 30px;
+	padding-left: 15px;
+
+}
+#UltimoBanner{
+	background: #8F494A;
+	width: auto;
+	height: auto;
+	
+}
+
